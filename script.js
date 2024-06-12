@@ -24,9 +24,9 @@ class Book {
     };
 };
 
-const hobbit = new Book("The Hobbit", "J.R.R. Tolkien", 3412)
+const hobbit = new Book("The Hobbit", "J.R.R. Tolkien", 3412);
 
-hobbit.getInfo()
+hobbit.getInfo();
 
 /*
 2. Exploring Objects and Math in JavaScript
@@ -70,11 +70,11 @@ class Account {
 
     getInfo = () => {
         console.log(`Account Number: ${this.accountNumber}, Balance: $${this.balance}, Owner: ${this.owner}`);
-    }
+    };
 
     deposit = (amount) => {
         this.balance += amount;
-    }
+    };
 
     withdraw = (amount) => {
         if (amount <= this.balance) {
@@ -91,10 +91,10 @@ class Account {
     };
 };
 
-const acc = new Account(1, 1000, "Andy")
+const acc = new Account(1, 1000, "Andy");
 
-acc.deposit(100)
-acc.getInfo()
-acc.withdraw(2000)
-acc.compInterest(.07, 4, 10)
-acc.getInfo()
+acc.deposit(100);
+acc.getInfo();
+acc.withdraw(2000);
+acc.compInterest(.07, 4, 10);
+acc.getInfo();
